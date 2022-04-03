@@ -1,7 +1,7 @@
 ---
 - name: "Download Kibana's rpm"
   get_url:
-    url: "https://artifacts.elastic.co/downloads/kibana/kibana-{{ kibana_version }}-x86_64.rpm"
+    url: "http://46.0.192.144/elasticsearch/kibana-{{ kibana_version }}-x86_64.rpm"
     dest: "files/kibana-{{ kibana_version }}-x86_64.rpm"
     validate_certs: false
   register: download_kibana
